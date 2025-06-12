@@ -1,12 +1,88 @@
-# React + Vite
+# 📱 Phone Comparison App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, responsive web interface built with **React** and **Bootstrap** that allows users to compare smartphones side-by-side. It includes modern UI elements, light/dark mode, localStorage persistence, and feature highlighting to enhance user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Github Repo
 
-## Expanding the ESLint configuration
+https://github.com/Kunal1101/phone-comparison
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Demo
+
+[🔗 View on Vercel](https://phone-comparison-iota.vercel.app/)
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone git@github.com:Kunal1101/phone-comparison.git
+cd phone-comparison
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+The app will open at `http://localhost:5173/`
+
+---
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+---
+
+## ✨ Features
+
+- 📱 Display a list of **8 modern smartphones**
+- 🔍 **Search filter** to quickly find devices
+- 🔁 **Add to Compare** button with toggle functionality
+- 📊 Side-by-side **comparison table** for up to 3 devices
+- 🎯 **Visual highlighting** of differences in comparison table
+- 💾 **LocalStorage persistence** for comparison items
+- 🌓 **Light/Dark mode toggle**
+- 📱 Fully **responsive** layout for mobile and desktop
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── assets/images/        # Local phone images
+├── components/           # Header, ProductList, ComparisonTable,
+├── data/                 # Product Data
+├── App.jsx               # Main component
+├── App.css               # Styling
+└── index.js
+```
+
+---
+
+.
+
+## 🧠 Assumptions
+
+- Static product data is used (no backend/API).
+- Images are stored locally and mapped via `imageMap.js`.
+- Max 3 products can be compared at a time.
+- Comparison highlights only for `Display`, `Camera`, and `Storage`.
+
+---
